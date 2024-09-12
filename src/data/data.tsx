@@ -15,8 +15,11 @@ import heroImage from '../images/header-background.jpg';
 import profilepic from '../images/profile_pic.jpg'; // replace with actual image
 import testimonialImage from '../images/testimonial.webp';
 import daikin_pic from '../images/portfolio/daikin_pic.jpg';
-
-
+import ardiunino_pic from '../images/portfolio/ardiunino_pic.png'; // replace with actual image
+import cloud_reli_pic from '../images/portfolio/cloud_reli_pic.png'; // replace with actual image
+import data_pic from '../images/portfolio/data_pic.png'; // replace with actual image
+import thermostat_pic from '../images/portfolio/thermostat_pic.png'; // replace with actual image
+import yurt_pic from '../images/portfolio/yurt_pic.png'; 
 
 import {
   About,
@@ -157,7 +160,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A cloud reliability platform',
     url: 'https://github.com/ErhanKlnz/Cloud-Site',
     image: {
-      src: '/src/images/portfolio/cloud_reli_pic.png',
+      src: cloud_reli_pic,
       width: 500,
       height: 300,
       alt: 'CloudReli Image',
@@ -168,7 +171,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Dormitory management system',
     url: 'https://github.com/ErhanKlnz/Yurt-Otomasyonu',
     image: {
-      src: '/src/images/portfolio/yurt_pic.png',
+      src: yurt_pic,
       width: 500,
       height: 300,
       alt: 'Yurt Otomasyonu Image',
@@ -180,7 +183,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'An embedded system project using ESP32',
     url: 'https://github.com/ErhanKlnz/Air-Conditioning-Maintenance-Tracking-System',
     image: {
-      src: '/src/images/portfolio/ardiunino_pic.png',
+      src: ardiunino_pic,
       width: 500,
       height: 300,
       alt: 'Air Conditioning Maintenance Tracking System Image',
@@ -191,9 +194,9 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A simulation platform for smart thermostats',
     url: 'https://github.com/ErhanKlnz/Thermostat-Simulation-Platform',
     image: {
-      src: '/src/images/portfolio/thermostat_pic.jpg',
+      src: thermostat_pic,
       width: 500,
-      height: 300,
+      height: 100,
       alt: 'Thermostat Simulation Platform Image',
     },
   },
@@ -202,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Analysis and optimization of machine learning models',
     url: 'https://github.com/ErhanKlnz/Data-Engineering-Classification',
     image: {
-      src: '/src/images/portfolio/data_pic.png',
+      src: data_pic,
       width: 500,
       height: 300,
       alt: 'Comparison of Classification Algorithms Image',
@@ -252,7 +255,7 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Asena Ceylan--Daikin Turkey Heating and Cooling Systems R&D Senior Compliance Engineer',
       text: '',
-      image: '../images/portfolio/daikin_pic.jpg',
+      image: daikin_pic,
     },
   ],
 };

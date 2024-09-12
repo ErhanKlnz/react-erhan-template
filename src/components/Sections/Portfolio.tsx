@@ -30,7 +30,7 @@ const Portfolio: FC = memo(() => {
                     src={image.src} // src is now correctly referenced
                     width={image.width} // Numeric width from the image object
                     height={image.height} // Numeric height from the image object
-                    layout="responsive" // Görselin responsive olmasını sağlar
+
                     objectFit="cover" // Görselin içerik alanına sığdırılmasını sağlar
                   />
                   <ItemOverlay item={item} />
