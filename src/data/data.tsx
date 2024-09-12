@@ -11,21 +11,8 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import heroImage from '../images/header-background.jpg';
+import profilepic from '../images/profilepic.jpg'; // replace with actual image
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,8 +31,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Erhan Zeki KILNAZ - Resume',
+  description: 'Computer Engineer Resume - Erhan Zeki KILNAZ',
 };
 
 /**
@@ -69,18 +56,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Erhan Zeki KILNAZ.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Hendek, Sakarya-based <strong className="text-stone-100">Computer Engineer</strong>, recently graduated
+        from <strong className="text-stone-100">Düzce University</strong>. I interned at Daikin, where I worked on
+        projects related to energy efficiency and environmental sustainability.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I am passionate about embedded systems, machine learning, and database systems. I strive to solve problems with
+        innovative solutions.
       </p>
     </>
   ),
@@ -104,16 +90,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a Computer Engineer with experience in developing embedded systems, secure file management platforms, and machine learning models. My primary focus is on environmental sustainability and energy efficiency projects.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Hendek, Sakarya', Icon: MapIcon},
+    {label: 'Date of Birth', text: '2001', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Turkish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Machine Learning, Embedded Systems, Data Analysis', Icon: SparklesIcon},
+    {label: 'Study', text: 'Düzce University', Icon: AcademicCapIcon},
+    {label: 'Internship', text: 'Daikin Turkey R&D', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,71 +106,40 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      {name: 'C++', level: 8},
+      {name: 'C#', level: 7},
+      {name: 'Python', level: 7},
+      {name: 'SQL', level: 6},
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Databases',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      {name: 'MSSQL', level: 6},
+      {name: 'PostgreSQL', level: 5},
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Embedded Systems & Tools',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      {name: 'Arduino IDE', level: 7},
+      {name: 'ESP32 Programming', level: 6},
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Machine Learning',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      {name: 'Data Analysis & Classification', level: 6},
+      {name: 'Model Performance Optimization', level: 5},
+    ],
+  },
+  {
+    name: 'Tools & Frameworks',
+    skills: [
+      {name: 'Git', level: 6},
+      {name: 'MS Office (Word, Excel, PowerPoint)', level: 7},
     ],
   },
 ];
@@ -196,111 +149,64 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    title: 'CloudReli',
+    description: 'A cloud reliability platform',
+    url: 'https://github.com/ErhanKlnz/Cloud-Site',
+    image: 'path_to_cloudreli_image.jpg',
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
+    title: 'Yurt Otomasyonu',
+    description: 'Dormitory management system',
+    url: 'https://github.com/ErhanKlnz/Yurt-Otomasyonu',
+    image: 'path_to_yurt_otomasyonu_image.jpg',
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
+    title: 'Bookmate',
+    description: 'Book management system',
+    url: 'https://github.com/ErhanKlnz/Bookmate',
+    image: 'path_to_bookmate_image.jpg',
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
+    title: 'Air Conditioning Maintenance Tracking System',
+    description: 'An embedded system project using ESP32',
+    url: 'https://github.com/ErhanKlnz/Air-Conditioning-Maintenance-Tracking-System',
+    image: 'path_to_klima_image.jpg',
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
+    title: 'Thermostat Simulation Platform',
+    description: 'A simulation platform for smart thermostats',
+    url: 'https://github.com/ErhanKlnz/Thermostat-Simulation-Platform',
+    image: 'path_to_thermostat_image.jpg',
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
+    title: 'Comparison of Classification Algorithms',
+    description: 'Analysis and optimization of machine learning models',
+    url: 'https://github.com/ErhanKlnz/Data-Engineering-Classification',
+    image: 'path_to_classification_image.jpg',
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2020 - 2024',
+    location: 'Düzce University',
+    title: 'BSc in Computer Engineering',
+    content: <p>Specialized in embedded systems, machine learning, and database systems.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2024 - September 2024',
+    location: 'Daikin Turkey R&D',
+    title: 'Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Worked on projects related to environmental sustainability, including the evaluation of heat pumps and smart
+        thermostats.
       </p>
     ),
   },
@@ -313,19 +219,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Kübra Kılnaz',
+      text: 'Erhan is a dedicated engineer with a strong focus on energy efficiency and sustainability. He demonstrated exceptional problem-solving skills during his internship at Daikin.',
+      image: 'https://via.placeholder.com/150',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Asena Ceylan',
+      text: 'Erhan consistently impressed me with his knowledge of embedded systems and his ability to develop practical, innovative solutions.',
+      image: 'https://via.placeholder.com/150',
     },
   ],
 };
@@ -333,41 +234,38 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out via any of the following platforms.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'erhanzekikilnaz@hotmail.com',
+      href: 'mailto:erhanzekikilnaz@hotmail.com',
+    },
+    {
+      type: ContactType.Phone,
+      text: '+90 536 735 65 65',
+      href: 'tel:+905367356565',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Hendek, Sakarya, Turkey',
+      href: 'https://www.google.com/maps/place/Hendek,+Sakarya',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ErhanKlnz',
+      href: 'https://github.com/ErhanKlnz',
     },
   ],
 };
 
 /**
- * Social items
+ * Social links
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ErhanKlnz'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/erhan-zeki-k%C4%B1lnaz/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/ErhanKlnz/'},
 ];
