@@ -12,8 +12,12 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.jpg';
-import profilepic from '../images/profilepic.jpg'; // replace with actual image
+import profilepic from '../images/profile_pic.jpg'; // replace with actual image
 import testimonialImage from '../images/testimonial.webp';
+import daikin_pic from '../images/portfolio/daikin_pic.jpg';
+
+
+
 import {
   About,
   ContactSection,
@@ -152,39 +156,60 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'CloudReli',
     description: 'A cloud reliability platform',
     url: 'https://github.com/ErhanKlnz/Cloud-Site',
-    image: 'path_to_cloudreli_image.jpg',
+    image: {
+      src: '/src/images/portfolio/cloud_reli_pic.png',
+      width: 500,
+      height: 300,
+      alt: 'CloudReli Image',
+    },
   },
   {
     title: 'Yurt Otomasyonu',
     description: 'Dormitory management system',
     url: 'https://github.com/ErhanKlnz/Yurt-Otomasyonu',
-    image: 'path_to_yurt_otomasyonu_image.jpg',
+    image: {
+      src: '/src/images/portfolio/yurt_pic.png',
+      width: 500,
+      height: 300,
+      alt: 'Yurt Otomasyonu Image',
+    },
   },
-  {
-    title: 'Bookmate',
-    description: 'Book management system',
-    url: 'https://github.com/ErhanKlnz/Bookmate',
-    image: 'path_to_bookmate_image.jpg',
-  },
+  
   {
     title: 'Air Conditioning Maintenance Tracking System',
     description: 'An embedded system project using ESP32',
     url: 'https://github.com/ErhanKlnz/Air-Conditioning-Maintenance-Tracking-System',
-    image: 'path_to_klima_image.jpg',
+    image: {
+      src: '/src/images/portfolio/ardiunino_pic.png',
+      width: 500,
+      height: 300,
+      alt: 'Air Conditioning Maintenance Tracking System Image',
+    },
   },
   {
     title: 'Thermostat Simulation Platform',
     description: 'A simulation platform for smart thermostats',
     url: 'https://github.com/ErhanKlnz/Thermostat-Simulation-Platform',
-    image: 'path_to_thermostat_image.jpg',
+    image: {
+      src: '/src/images/portfolio/thermostat_pic.jpg',
+      width: 500,
+      height: 300,
+      alt: 'Thermostat Simulation Platform Image',
+    },
   },
   {
     title: 'Comparison of Classification Algorithms',
     description: 'Analysis and optimization of machine learning models',
     url: 'https://github.com/ErhanKlnz/Data-Engineering-Classification',
-    image: 'path_to_classification_image.jpg',
+    image: {
+      src: '/src/images/portfolio/data_pic.png',
+      width: 500,
+      height: 300,
+      alt: 'Comparison of Classification Algorithms Image',
+    },
   },
 ];
+
 
 /**
  * Resume section
@@ -209,6 +234,7 @@ export const experience: TimelineItem[] = [
         thermostats.
       </p>
     ),
+    imageSrc: daikin_pic, 
   },
 ];
 
@@ -219,14 +245,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Kübra Kılnaz',
-      text: 'Erhan is a dedicated engineer with a strong focus on energy efficiency and sustainability. He demonstrated exceptional problem-solving skills during his internship at Daikin.',
-      image: 'https://via.placeholder.com/150',
+      name: 'Kübra Kılnaz--Daikin Turkey Quality and Sustainability Department Manager',
+      text: ''
+      
     },
     {
-      name: 'Asena Ceylan',
-      text: 'Erhan consistently impressed me with his knowledge of embedded systems and his ability to develop practical, innovative solutions.',
-      image: 'https://via.placeholder.com/150',
+      name: 'Asena Ceylan--Daikin Turkey Heating and Cooling Systems R&D Senior Compliance Engineer',
+      text: '',
+      image: '../images/portfolio/daikin_pic.jpg',
     },
   ],
 };

@@ -80,7 +80,12 @@ export interface PortfolioItem {
   title: string;
   description: string;
   url: string;
-  image: string | StaticImageData;
+  image: {
+    src: string;     // Görüntü kaynağı URL'si
+    width: number;   // Görüntü genişliği
+    height: number;  // Görüntü yüksekliği
+    alt?: string;    // Alternatif metin (opsiyonel)
+  };
 }
 
 /**
@@ -91,6 +96,7 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
+  imageSrc?: string; 
 }
 
 /**
