@@ -80,12 +80,7 @@ export interface PortfolioItem {
   title: string;
   description: string;
   url: string;
-  image: {
-    src: string;     // Görüntü kaynağı URL'si
-    width: number;   // Görüntü genişliği
-    height: number;  // Görüntü yüksekliği
-    alt?: string;    // Alternatif metin (opsiyonel)
-  };
+  image: string | StaticImageData;
 }
 
 /**

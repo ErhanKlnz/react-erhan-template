@@ -34,6 +34,7 @@ import {
   TimelineItem,
 } from './dataDef';
 
+
 /**
  * Page meta data
  */
@@ -109,47 +110,56 @@ export const aboutData: About = {
 };
 
 /**
+/**
  * Skills section
  */
 export const skills: SkillGroup[] = [
   {
     name: 'Programming Languages',
     skills: [
-      {name: 'C++', level: 8},
-      {name: 'C#', level: 7},
-      {name: 'Python', level: 7},
-      {name: 'SQL', level: 6},
+      { name: 'Python', level: 7 },
+      { name: 'SQL', level: 8 },
+      { name: 'HTML', level: 6 },
+      { name: 'C++', level: 6 },
     ],
   },
   {
     name: 'Databases',
     skills: [
-      {name: 'MSSQL', level: 6},
-      {name: 'PostgreSQL', level: 5},
+      { name: 'Microsoft SQL Server', level: 7 },
+      { name: 'PostgreSQL', level: 8 },
+      { name: 'Relational Databases', level: 7 },
     ],
   },
   {
-    name: 'Embedded Systems & Tools',
+    name: 'Machine Learning & Data Analysis',
     skills: [
-      {name: 'Arduino IDE', level: 7},
-      {name: 'ESP32 Programming', level: 6},
+      { name: 'Machine Learning', level: 5 },
+      { name: 'Data Analysis', level: 7 },
+      { name: 'Critical Thinking', level: 6 },
+      { name: 'Research', level: 7 },
     ],
   },
   {
-    name: 'Machine Learning',
+    name: 'Web Development',
     skills: [
-      {name: 'Data Analysis & Classification', level: 6},
-      {name: 'Model Performance Optimization', level: 5},
+      { name: 'Flask', level: 7 },
+      { name: 'Streamlit', level: 8 },
+      { name: 'HTML & CSS', level: 6 },
     ],
   },
   {
     name: 'Tools & Frameworks',
     skills: [
-      {name: 'Git', level: 6},
-      {name: 'MS Office (Word, Excel, PowerPoint)', level: 7},
+      { name: 'Git', level: 8 },
+      { name: 'Microsoft Office (Word, Excel, PowerPoint)', level: 5 },
+      { name: 'Computer Simulations', level: 7 },
+      { name: 'Reporting', level: 6 },
+      { name: 'Presentation Skills', level: 7 },
     ],
   },
 ];
+
 
 /**
  * Portfolio section
@@ -159,57 +169,36 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'CloudReli',
     description: 'A cloud reliability platform',
     url: 'https://github.com/ErhanKlnz/Cloud-Site',
-    image: {
-      src: cloud_reli_pic,
-      width: 500,
-      height: 300,
-      alt: 'CloudReli Image',
-    },
+    image: cloud_reli_pic,
+
   },
   {
     title: 'Yurt Otomasyonu',
     description: 'Dormitory management system',
     url: 'https://github.com/ErhanKlnz/Yurt-Otomasyonu',
-    image: {
-      src: yurt_pic,
-      width: 500,
-      height: 300,
-      alt: 'Yurt Otomasyonu Image',
-    },
+    image: yurt_pic,
+
   },
   
   {
     title: 'Air Conditioning Maintenance Tracking System',
     description: 'An embedded system project using ESP32',
     url: 'https://github.com/ErhanKlnz/Air-Conditioning-Maintenance-Tracking-System',
-    image: {
-      src: ardiunino_pic,
-      width: 500,
-      height: 300,
-      alt: 'Air Conditioning Maintenance Tracking System Image',
-    },
+    image: ardiunino_pic,
   },
   {
     title: 'Thermostat Simulation Platform',
     description: 'A simulation platform for smart thermostats',
     url: 'https://github.com/ErhanKlnz/Thermostat-Simulation-Platform',
-    image: {
-      src: thermostat_pic,
-      width: 500,
-      height: 100,
-      alt: 'Thermostat Simulation Platform Image',
-    },
+    image: thermostat_pic,
+   
+    
   },
   {
     title: 'Comparison of Classification Algorithms',
     description: 'Analysis and optimization of machine learning models',
     url: 'https://github.com/ErhanKlnz/Data-Engineering-Classification',
-    image: {
-      src: data_pic,
-      width: 500,
-      height: 300,
-      alt: 'Comparison of Classification Algorithms Image',
-    },
+    image: data_pic,
   },
 ];
 
@@ -237,7 +226,7 @@ export const experience: TimelineItem[] = [
         thermostats.
       </p>
     ),
-    imageSrc: daikin_pic, 
+    
   },
 ];
 
@@ -249,13 +238,14 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Kübra Kılnaz--Daikin Turkey Quality and Sustainability Department Manager',
-      text: ''
-      
+      text: '',
+      image: 'https://logos-world.net/wp-content/uploads/2023/01/Daikin-Logo-1963.png',
+
     },
     {
       name: 'Asena Ceylan--Daikin Turkey Heating and Cooling Systems R&D Senior Compliance Engineer',
       text: '',
-      image: daikin_pic,
+      image: 'https://logos-world.net/wp-content/uploads/2023/01/Daikin-Logo-1963.png',
     },
   ],
 };
@@ -274,8 +264,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Phone,
-      text: '+90 536 735 65 65',
-      href: 'tel:+905367356565',
+      text: '',
+      href: 'tel:+',
     },
     {
       type: ContactType.Location,

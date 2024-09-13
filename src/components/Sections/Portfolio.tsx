@@ -23,16 +23,7 @@ const Portfolio: FC = memo(() => {
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  {/* Image component with src, width, height, and alt properties */}
-                  <Image
-                    alt={image.alt || title} // Use alt from the image or fall back to title
-                    className="h-full w-full"
-                    src={image.src} // src is now correctly referenced
-                    width={image.width} // Numeric width from the image object
-                    height={image.height} // Numeric height from the image object
-
-                    objectFit="cover" // Görselin içerik alanına sığdırılmasını sağlar
-                  />
+                  <Image alt={title} className="h-full w-full" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
               </div>
@@ -43,6 +34,7 @@ const Portfolio: FC = memo(() => {
     </Section>
   );
 });
+
 
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
