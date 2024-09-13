@@ -19,6 +19,7 @@ import thermostat_pic from '../images/portfolio/thermostat_pic.png'; // replace 
 import yurt_pic from '../images/portfolio/yurt_pic.png';
 import profilepic from '../images/profile_pic.jpg'; // replace with actual image
 import testimonialImage from '../images/testimonial.webp';
+
 import {
   About,
   ContactSection,
@@ -76,12 +77,7 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
+    
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
