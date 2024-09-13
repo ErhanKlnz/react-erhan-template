@@ -12,14 +12,13 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.jpg';
-import profilepic from '../images/profile_pic.jpg'; // replace with actual image
-import testimonialImage from '../images/testimonial.webp';
 import ardiunino_pic from '../images/portfolio/ardiunino_pic.png'; // replace with actual image
 import cloud_reli_pic from '../images/portfolio/cloud_reli_pic.png'; // replace with actual image
 import data_pic from '../images/portfolio/data_pic.png'; // replace with actual image
 import thermostat_pic from '../images/portfolio/thermostat_pic.png'; // replace with actual image
-import yurt_pic from '../images/portfolio/yurt_pic.png'; 
-
+import yurt_pic from '../images/portfolio/yurt_pic.png';
+import profilepic from '../images/profile_pic.jpg'; // replace with actual image
+import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -32,7 +31,6 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
-
 
 /**
  * Page meta data
@@ -116,49 +114,48 @@ export const skills: SkillGroup[] = [
   {
     name: 'Programming Languages',
     skills: [
-      { name: 'Python', level: 7},
-      { name: 'SQL', level: 8},
-      { name: 'HTML', level: 6},
-      { name: 'C++', level: 6},
+      {name: 'Python', level: 7},
+      {name: 'SQL', level: 8},
+      {name: 'HTML', level: 6},
+      {name: 'C++', level: 6},
     ],
   },
   {
     name: 'Databases',
     skills: [
-      { name: 'Microsoft SQL Server', level: 7},
-      { name: 'PostgreSQL', level: 8},
-      { name: 'Relational Databases', level: 7},
+      {name: 'Microsoft SQL Server', level: 7},
+      {name: 'PostgreSQL', level: 8},
+      {name: 'Relational Databases', level: 7},
     ],
   },
   {
     name: 'Machine Learning & Data Analysis',
     skills: [
-      { name: 'Machine Learning', level: 5},
-      { name: 'Data Analysis', level: 7},
-      { name: 'Critical Thinking', level: 6},
-      { name: 'Research', level: 7},
+      {name: 'Machine Learning', level: 5},
+      {name: 'Data Analysis', level: 7},
+      {name: 'Critical Thinking', level: 6},
+      {name: 'Research', level: 7},
     ],
   },
   {
     name: 'Web Development',
     skills: [
-      { name: 'Flask', level: 7},
-      { name: 'Streamlit', level: 8},
-      { name: 'HTML & CSS', level: 6},
+      {name: 'Flask', level: 7},
+      {name: 'Streamlit', level: 8},
+      {name: 'HTML & CSS', level: 6},
     ],
   },
   {
     name: 'Tools & Frameworks',
     skills: [
-      { name: 'Git', level: 8},
-      { name: 'Microsoft Office (Word, Excel, PowerPoint)', level: 5},
-      { name: 'Computer Simulations', level: 7},
-      { name: 'Reporting', level: 6},
-      { name: 'Presentation Skills', level: 7},
+      {name: 'Git', level: 8},
+      {name: 'Microsoft Office (Word, Excel, PowerPoint)', level: 5},
+      {name: 'Computer Simulations', level: 7},
+      {name: 'Reporting', level: 6},
+      {name: 'Presentation Skills', level: 7},
     ],
   },
 ];
-
 
 /**
  * Portfolio section
@@ -169,16 +166,14 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A cloud reliability platform',
     url: 'https://github.com/ErhanKlnz/Cloud-Site',
     image: cloud_reli_pic,
-
   },
   {
     title: 'Yurt Otomasyonu',
     description: 'Dormitory management system',
     url: 'https://github.com/ErhanKlnz/Yurt-Otomasyonu',
     image: yurt_pic,
-
   },
-  
+
   {
     title: 'Air Conditioning Maintenance Tracking System',
     description: 'An embedded system project using ESP32',
@@ -190,8 +185,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A simulation platform for smart thermostats',
     url: 'https://github.com/ErhanKlnz/Thermostat-Simulation-Platform',
     image: thermostat_pic,
-   
-    
   },
   {
     title: 'Comparison of Classification Algorithms',
@@ -200,7 +193,6 @@ export const portfolioItems: PortfolioItem[] = [
     image: data_pic,
   },
 ];
-
 
 /**
  * Resume section
@@ -225,7 +217,6 @@ export const experience: TimelineItem[] = [
         thermostats.
       </p>
     ),
-    
   },
 ];
 
@@ -239,7 +230,6 @@ export const testimonial: TestimonialSection = {
       name: 'Kübra Kılnaz--Daikin Turkey Quality and Sustainability Department Manager',
       text: '',
       image: 'https://logos-world.net/wp-content/uploads/2023/01/Daikin-Logo-1963.png',
-
     },
     {
       name: 'Asena Ceylan--Daikin Turkey Heating and Cooling Systems R&D Senior Compliance Engineer',

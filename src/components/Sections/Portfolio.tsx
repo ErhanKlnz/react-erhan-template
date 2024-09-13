@@ -35,7 +35,6 @@ const Portfolio: FC = memo(() => {
   );
 });
 
-
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
