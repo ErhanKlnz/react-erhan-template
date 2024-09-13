@@ -14,7 +14,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.jpg';
 import profilepic from '../images/profile_pic.jpg'; // replace with actual image
 import testimonialImage from '../images/testimonial.webp';
-import daikin_pic from '../images/portfolio/daikin_pic.jpg';
 import ardiunino_pic from '../images/portfolio/ardiunino_pic.png'; // replace with actual image
 import cloud_reli_pic from '../images/portfolio/cloud_reli_pic.png'; // replace with actual image
 import data_pic from '../images/portfolio/data_pic.png'; // replace with actual image
