@@ -1,15 +1,13 @@
 /* eslint-env node */
 
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
-    // Next 12 has multiple TS loaders, and we need to update all of them.
+    // Next.js TS ayarlarını yapılandırıyoruz.
     const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
 
     tsRules.forEach(rule => {
-      // eslint-disable-next-line no-param-reassign
       rule.include = undefined;
     });
 
@@ -22,18 +20,13 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   reactStrictMode: true,
   swcMinify: true,
-  trailingSlash: false,
+  trailingSlash: true,  // Statik dosya yolları için trailingSlash kullanıyoruz
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },{
-        protocol: 'https',
-        hostname: 'source.unsplash.com',
-      },
-    ],
+    unoptimized: true, // Statik export için optimize edilmemiş görüntüler kullanıyoruz
   },
+  output: 'export',  // Statik export modunu etkinleştiriyoruz
+  basePath: '/react-erhan-template', // GitHub repo adı
+  assetPrefix: '/react-erhan-template/', // GitHub Pages için asset yolunu ayarlıyoruz
 };
 
 module.exports = nextConfig;
